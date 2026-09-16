@@ -7,31 +7,10 @@
     } */
 
     body{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10dvh 1fr;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
     }
-
-    header{
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    #drawer{
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    main{
-        grid-column: 1/3;
-        grid-row: 2/3;
-    }
-    
-    /* img{
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    } */
 
     h1{
         font-size: 3.2rem;
@@ -42,8 +21,8 @@
     h2{
         font-size: 1.4rem;
         /* font-weight: 400;
-        color: #666;
-        margin-bottom: 1rem; */
+        color: #666; */
+        margin-bottom: 1.6rem;
     }
 
     /* li,p{
@@ -51,15 +30,16 @@
     } */
 
     header{
-        padding: 1rem 70dvh 0 3.2rem;
+        padding: 1rem 0 0 3.2rem;
     }
 
     #drawer{
-        display: block;
+        /* display: flex; */
         /* flex-flow: column nowrap;
         justify-content: space-between; */
+        flex: 0 1 65%;
         padding: 3rem 3.4rem 0 2rem;
-        background-color: #fff;
+        /* background-color: #fff; */
         /* &::after{
             content: "";
             display: inline-block;
@@ -73,8 +53,9 @@
         ul{
             display: flex;
             flex-flow: row nowrap;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
+            column-gap: 5%;
             column-rule-width: 1px;
             column-rule-style: solid;
             column-rule-color: #000;
@@ -157,22 +138,23 @@
                     appearance: base-select;
                 }
                 
-                /* >ul{
-                    input[type="checkbox"]{
+                >div{
+                    padding-left: 2.4rem;
+                    /* input[type="checkbox"]{
                         appearance: auto;
                     }
-                    
-                    >li{
+                     */
+                    /* >label{
                         display: flex;
                         flex-flow: row nowrap;
                         justify-content: flex-start;
                         align-items: flex-start;
                         gap: 1.2rem;
                         margin-bottom: 1.6rem;
-                    }
-                } */
+                    } */
+                }
 
-                /* >input[type="submit"]{
+                >input[type="submit"]{
                     padding: 1rem 0;
                     display: block;
                     text-align: center;
@@ -180,9 +162,10 @@
                     font-weight: 500;
                     color: #fff;
                     background-color: #0170EF;
-                    width: 100%;
+                    width: 60%;
                     border-radius: 1.2rem;
-                } */
+                    margin: 0 auto;
+                }
             }
         }
 

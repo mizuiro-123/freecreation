@@ -1,0 +1,140 @@
+html,body{
+    font-size: 62.5%;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+h1{
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+li,p{
+    font-size: 1.4rem;
+}
+
+header{
+    padding: 1.5rem 40dvh 0 1.5rem;
+}
+
+#drawer{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 5rem 0 1.8rem 1.6rem;
+    background-color: #fff;
+    &::after{
+        content: "";
+        display: inline-block;
+        width: 90px;
+        height: 100dvh;
+        background-color: #666;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    li{
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+    a {
+        color: #333;
+    }
+}
+
+main{
+    padding: 3.2rem;
+    h1,h2{
+        text-align: center;
+    }
+
+    #touroku{
+        >ul{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+
+            >li{
+                padding: 0.4rem 0;
+                flex: 0 1 26%;
+                text-align: center;
+            }
+            
+            >li:nth-of-type(1){
+                background-color: #5F92FF;
+                color: #fff;
+            }
+            >li:nth-of-type(2){
+                background-color: #666;
+                color: #fff;
+            }
+            >li:nth-of-type(3){
+                background-color: #ccc;
+                color: #333;
+            }
+        }
+        form{
+            >label{
+                display: none;
+            }
+
+            >input[type="text"],select{
+                padding: 1rem 1.6rem;
+                margin-bottom: 2.4rem;
+                width: 100%;
+                background-color: #e6e6e6;
+                border: 1px solid #666;
+                border-radius: 4px;
+                appearance: auto;
+            }
+            
+            >div{
+                input[type="checkbox"]{
+                    appearance: auto;
+                }
+                
+                >label{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: 1.2rem;
+                    margin-bottom: 1.6rem;
+                }
+            }
+
+            >input[type="submit"]{
+                padding: 1rem 0;
+                display: block;
+                text-align: center;
+                font-size: 1.6rem;
+                font-weight: 500;
+                color: #fff;
+                background-color: #0170EF;
+                width: 100%;
+                border-radius: 1.2rem;
+            }
+        }
+    }
+
+    #sonota{
+        display: none;
+    }
+
+}

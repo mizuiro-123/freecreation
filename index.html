@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/md.css">
+    <link rel="stylesheet" href="css/pc.css">
+    <link rel="stylesheet" href="css/drawer.css">
+    <title>アカウント登録</title>
+</head>
+<body>
+    <header>
+        <p><a href="index.html"><img src="images/logo.png" alt="WACOM"></a></p>
+    </header>
+    <input type="checkbox" id="toggle">
+    <label for="toggle" id="menu-button">
+        <span></span>
+        <span class="sr-only">メニューを開く</span>
+    </label>
+    <nav id="drawer">
+        <ul>
+            <li><a href="#">ペンタブレット</a></li>
+            <li><a href="#">アクセサリー</a></li>
+            <li><a href="#">ヘルプ</a></li>
+            <li><a href="#">アカウント</a></li>
+            <li><a href="#">カート</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="touroku">
+            <h1>新規顧客アカウント作成</h1>
+            <h2>ソーシャルメディアで作成</h2>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">Google</a></li>
+            </ul>
+            <h2>またはメールアドレスから作成</h2>
+            <form action="#">
+                <label for="mail">メールアドレス</label>
+                <input type="text" name="mail" id="mail" placeholder="メールアドレス">
+
+                <label for="pas">パスワード</label>
+                <input type="text" name="pas" id="pas" placeholder="パスワード">
+
+                <label for="pastow">パスワードの再入力</label>
+                <input type="text" name="pastow" id="pastow" placeholder="パスワードの再入力">
+
+                <label for="mei">名</label>
+                <input type="text" name="mei" id="mei" placeholder="名">
+
+                <label for="sei">姓</label>
+                <input type="text" name="sei" id="sei" placeholder="姓">
+
+                <label for="gengo">表示する言語</label>
+                <select name="gengo" id="gengo">
+                    <option value="shokigengo">表示する言語</option>
+                    <option value="nihon">Japanece</option>
+                    <option value="eigo">English</option>
+                    <option value="chugoku">Chinese</option>
+                    <option value="supein">Spanish</option>
+                    <option value="arabia">Arabic</option>
+                </select>
+                
+                <!-- <label for="porisi">WACOMのプライバシーポリシーとクッキーポリシーに同意する</label> -->
+
+                <div>
+                    <label>
+                        <input type="checkbox" name="porisi">WACOMのプライバシーポリシーとクッキーポリシーに同意する
+                    </label>
+
+                    <label for="">
+                        <input type="checkbox" name="riyou">WACOMの利用規約に同意する
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="news" id="news" checked>ニュース、製品アップデート、イベント、プロモーションなどの情報が記載されたワコムおよびその子会社からの電子メールの送付を希望します<br>（登録解除はいつでも可能です）
+                    </label>
+                </div>
+
+                <input type="submit" id="sub" value="アカウント作成">
+            </form>
+        </section>
+        <section id="sonota">
+            <h2>Wacom IDを作成いただくと、多くのメリットがあります。</h2>
+            <ul>
+                <li><img src="images/icon_merit_1.png" alt="">500Pプレゼント<br>※初回登録時のみ</li>
+                <li><img src="images/icon_merit_2.png" alt="">ポイントが貯まる</li>
+                <li><img src="images/icon_merit_3.png" alt="">製品保証を延長</li>
+                <li><img src="images/icon_merit_4.png" alt="">割引クーポン</li>
+                <li><img src="images/icon_merit_5.png" alt="">会員限定セール</li>
+            </ul>
+        </section>
+    </main>
+    <!-- <footer></footer> -->
+</body>
+</html>
